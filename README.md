@@ -2,7 +2,7 @@
 
 A full-featured Social Network Backend built with Node.js, Express, and MongoDB. Features include a smart news feed algorithm, image uploads, and relationship management.
 
-**Live Demo:** \[Add Your Render URL Here\]
+**Live Demo:**https://socail-net-site-api.onrender.com
 
 ##  **Key Features**
 
