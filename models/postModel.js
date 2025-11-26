@@ -32,10 +32,30 @@ const postSchema=new mongoose.Schema({
     },
 
     //who like this post? (array of users ids)
-    like:[
+    likes:[
         {
             type:mongoose.Schema.Types.ObjectId,
             ref:"User"
+        }
+    ],
+
+    //comments array of comments ids
+    comments:[
+        {
+            user:{
+                type:mongoose.Schema.Types.ObjectId,
+                ref:"User",
+                required:true
+            },
+
+            text:{
+                type:String,
+                required:true
+            },
+            createdAt:{
+                type:Date,
+                default:Date.now
+            }
         }
     ]
 

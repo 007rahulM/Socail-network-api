@@ -15,6 +15,14 @@ app.use("/api/auth",authRoutes);
 const userRoutes=require("./routes/userRoutes");
 app.use("/api/users",userRoutes);
 
+//import the post routes 
+const postRoutes=require("./routes/postRoutes");
+app.use("/api/posts",postRoutes);
+
+//import the uploadroutes
+const uploadRoutes=require("./routes/uploadRoutes");
+app.use("/api/upload",uploadRoutes);
+
 
 //DB connection
 mongoose.connect(process.env.MONGO_URI)
